@@ -1,90 +1,155 @@
-.container-all, .container-right { 
+html{
+    font-family: 'Noto Sans JP', sans-serif; 
+    background: rgb(189, 195, 206);
+ }
+body{
+    margin: 0;        
+    box-sizing: border-box; 
+  }
+.container-all, 
+.container-right { 
     display: flex;
   }
-  .container-right {
-    background: rgba(248, 239, 230);    
-    flex-direction: column;
-    width: 50vw; 
-    color: rgb(0, 0, 0);
-    border-radius: 0 7px 7px 0; 
-}
-.container-all div {
-    font-size: 1vw;
-    padding: .5em;  
+.container-all div {    
+    padding: .5em; 
+    font-size: 1vw; 
     flex: 1;
-    
   }
-  .container-left{
-    background: rgba(58, 79, 100);
-    color: white;
-    border-radius: 7px 0 0 7px; 
-    width: 20vw; 
-    box-sizing: border-box;     
-  }
-  .container-all{
+.container-all{
     justify-content: center;
     width: 70vw; 
     margin-left:auto;
     margin-right:auto
   }
-  .container-circles{
-    display: flex;
-    flex-direction:row;
-    flex: 1;
-    margin-left: -25px; 
-    margin-right: 5px;   
-  }
-  .subject{
-    display: flex;
-    font-size: 3vw;
-    flex: 1;
-  }
-  .circles{
-    background: transparent;
-    margin-left: -40px;    
-    display: flex;
-    flex: 1;     
-  }
-    body{
-    margin:0;
-        
-    box-sizing: border-box; 
-  }
-  header{
-    border-radius: 0 7px 0 0;
-    box-sizing: border-box; 
-  }
-  footer{
-    border-radius: 0 0 7px 0;  
-    box-sizing: border-box; 
-  }
-  html{
-    font-family: 'Noto Sans JP', sans-serif; 
-    background: rgb(189, 195, 206);
- }
- h1{
-     text-align: center;
-     font-variant: small-caps;
-     padding-top: 25px;
- }
- h2{
-     text-align: center;
-     font-variant: small-caps;
- }
- h3{
-     text-align: center;
- }
- h3::after {
-     content: '';
-     display: block;
-     width: 100px;
-     margin: 10px auto;
-     border-bottom: 5px solid #f88808;
+.container-right {
+    flex-direction: column;
+    width: 50vw; 
+    color: rgb(0, 0, 0);
+    background: rgba(248, 239, 230);     
+    border-radius: 0 7px 7px 0; 
 }
-.center-image{
-    text-align:center;
+header{
+    box-sizing: border-box; 
+    border-radius: 0 7px 0 0;    
+  }
+  h1{
+    padding-top: 25px;
+    text-align: center;
+    font-variant: small-caps;    
+}
+h2{
+    text-align: center;
+    font-variant: small-caps;
+}
+h3{
+    text-align: center;
+}
+h3::after {
+    content: '';
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    border-bottom: 5px solid #f88808;
+}
+.about-me{    
+    padding: 5px 30px;
+    margin: 0 2vw;
+    text-align: justify;
+    font-size: 120%;
+}
+.education{    
+    padding: 5px 30px; 
+    margin-bottom: 50px;
+    font-size: 120%;
+}
+.study{
+    width: 80%;
+    margin: auto;
+}
+.study th:nth-child(2){
+    text-align: left;
+}
+.study td, 
+.study th{
+    padding: 8px;    
+}
+.study td{
+    border-bottom: 2px solid rgb(123, 150, 155);
+}
+.study li{
+    padding-left: 10px;
+}
+.codewars{
+    display: block;
+    padding: 5px 30px;
+    margin: 0 2vw;  
+    font-size: 100%;
+    text-align: left;
+    color: black;   
+    border-radius: 15px;
+    border: 1px solid transparent;     
+}
+.codewars:hover{    
+    color:#ffffff;  
+    background:rgba(58, 79, 100);  
+    border: 1px dashed #f88808;
+}
+footer{    
+    box-sizing: border-box; 
+    border-radius: 0 0 7px 0;  
+}
+.footer{
+    padding-left: 30px;     
+    font-size: 120%;   
+}
+.footer p{
+    padding: 0;
+    padding-top: 10vh;
+    margin: 0;
+}
+.rsschool-logo{
+    width: 110px;    
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+}
+.rsschool-logo:hover{
+    border: 1px solid #f88808;
+}
+.github{    
+    display: inline;
+    max-width: 100px;
+    margin: 0 30px 0 0px;
+    padding: 0px;
+    font-size: 100%;
+    color: black;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 15px;    
+}
+.github:hover{
+    color:#ffffff;
+    background:#f88808;    
+    border: 1px dashed #f88808;
+}
+.year{
+    margin-left: 400px;
+}
+.container-left{
+    width: 20vw; 
+    box-sizing: border-box;    
+    color: white;
+    background: rgba(58, 79, 100);    
+    border-radius: 7px 0 0 7px;      
+}
+.center-image{    
     padding: 25px 0;
+    text-align: center;
 }  
+.contact-me{
+    padding: 5px;
+    line-height: 1.5;
+}
 .contacts{
     list-style: none; 
    }
@@ -96,27 +161,34 @@
 .my-picture{
     display:block;
     width: 10vw;
+    margin: auto;   
     border-radius: 50%;
-    border: 3px solid #a35905;
-    margin: auto;    
+    border: 3px solid #a35905;     
 }
-.horizontal-list{
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-    text-align: center;
-}
-.contact-me{
-    padding: 5px;
-    line-height: 1.5;
-}
-.container {
+.container-circles{
     display: flex;
-    
+    flex-direction:row;
+    flex: 1;
+    margin-left: -25px; 
+    margin-right: 5px;   
+  }
+.subject{
+    display: flex;    
+    flex: 1;
+    font-size: 3vw;
+  }
+.circles{
+    display: flex;
+    flex: 1; 
+    margin-left: -40px;   
+    background: transparent;   
+  }
+.container {
+    display: flex;    
     overflow: hidden; 
     line-height: 1.5;  
   }
-  .circle-orange {
+.circle-orange {
     width: 0.2vw;
     height: 0.2vw;
     display: flex;
@@ -124,11 +196,9 @@
     margin-right: 5px;
     border-radius: 50%;
     overflow: hidden;
-    background: #f88808;
-    
+    background: #f88808;    
   }
-
-  .circle-gray{
+.circle-gray{
     width: 0.2vw;
     height: 0.2vw;
     display: inline-flex;
@@ -136,96 +206,11 @@
     margin-right: 5px;
     border-radius: 50%;
     overflow: hidden;
-    background: #a8a39e;
-    
-  }  
-
+    background: #a8a39e;    
+  } 
 .gradation{
     font-size: 1vw;
     list-style: none;
-    line-height: 2.2;
-    
-}
-.about-me{
-    font-size: 120%;
-    padding: 5px 30px;
-    margin: 0 2vw;
-    text-align: justify;
-}
-.education{
-    font-size: 120%;
-    padding: 5px 30px; 
-    margin-bottom: 50px;
-}
-
-    
-
-.footer{
-    padding-left:30px;     
-    font-size: 120%;   
-}
-.footer p{
-    padding: 0;
-    padding-top: 10vh;
-    margin: 0;
-}
-.rsschool-logo{
-    width: 110px;    
-    border: 1px solid transparent;
-    text-decoration:none;
-    color: white;
-}
-.rsschool-logo:hover{
-    border: 1px solid #f88808;
-}
-.github{
-margin: 0 30px 0 0px;
-display: inline;
-max-width: 100px;
-padding: 0px;
-border: 1px solid transparent;
-border-radius: 15px;
-font-size: 100%;
-color: black;
-text-decoration: none;
-}
-.github:hover{
-    background:#f88808;
-    color:#ffffff;
-    border: 1px dashed #f88808;
-}
-.year{
-    margin-left: 400px;
-}
-.study{
-    width: 80%;
-    margin: auto;
-}
-.study th:nth-child(2){
-text-align: left;
-}
-.study td, .study th{
-    padding: 8px;    
-}
-.study td{
-    border-bottom: 2px solid rgb(123, 150, 155);
-}
-.study li{
-    padding-left: 10px;
-}
-
-.codewars{
-    display: block;
-    padding: 5px 30px;
-    margin: 0 2vw;  
-    border-radius: 15px;
-    border: 1px solid transparent;
-    font-size: 100%;
-    text-align: left;
-    color: black;    
-}
-.codewars:hover{
-  background:rgba(58, 79, 100);
-  color:#ffffff;    
-  border: 1px dashed #f88808;
-}
+    line-height: 2.2;    
+}  
+ 
