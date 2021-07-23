@@ -1,1 +1,1 @@
-https://bonyariwanderer.github.io/rsschool-cv/cv
+https://bonyariwanderer.github.io/rsschool-cv/
